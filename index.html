@@ -8,18 +8,18 @@
         <header class="main-header">
             <nav class="main-header-navigation">
                 <a class="main-header-logo">
-                    <img src="#" alt="Логотип Gllacy">
+                    <img src="assets/svg/logo.svg" alt="Логотип Gllacy">
                 </a>
                 <ul class="site-navigation">
                     <li><a href="#">Каталог</a></li>
                     <li><a href="#">Доставка и оплата</a></li>
                     <li><a href="#">О Компании</a></li>
                 </ul>
-                <ul class="user-navigation">
-                    <li>Кнопка поиска</li>
-                    <li>Вход</li>
-                    <li>Корзина с товарами</li>
-                </ul>
+                <p class="user-navigation">
+                    <button type="button" class="user-navigation-search">Поиск</button>
+                    <a href="login.html" class="user-navigation-login">Вход</a>
+                    <button type="button" class="user-navigation-basket">Корзина</button>
+                </p>
             </nav>
         </header>
         <main class="container">
@@ -134,7 +134,11 @@
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. 
                     Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)
                 </p>
-                <!--Здесь будет форма-->
+                <form action="post">
+                    <label for="user-email-subscribe" class="visually-hidden">Электронная почта</label>
+                    <input type="text" name="user-email-subscribe" id="user-email-subscribe" placeholder="Электронная почта">
+                    <button type="submit">Отправить</button>
+                </form>
             </section>
             <section class="main-map">
                 <img src="#" alt="Где нас найти">
