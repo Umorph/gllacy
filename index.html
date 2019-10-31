@@ -203,5 +203,18 @@
                 </p>
             </div>
         </footer>
+        <section class="modal modal-login">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                <label for="login-email" class="visually-hidden">Электронная почта</label>
+                <input type="email" name="email" class="login-email" id="login-email" placeholder="Электронная почта" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                <label for="login-password" class="visually-hidden">Пароль</label>
+                <input type="password" name="password" class="login-password" id="login-password" placeholder="Пароль" required>
+                <button class="main-button" type="submit">Войти</button>
+            </form>
+            <p class="modal-restore">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+            </p>
+        </section>
     </body>
 </html>
