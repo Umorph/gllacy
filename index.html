@@ -204,7 +204,8 @@
             </div>
         </footer>
         <section class="modal modal-login">
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <h3 class="visually-hidden">Форма входа</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
                 <label for="login-email" class="visually-hidden">Электронная почта</label>
                 <input type="email" name="email" class="login-email" id="login-email" placeholder="Электронная почта" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
                 <label for="login-password" class="visually-hidden">Пароль</label>
@@ -215,6 +216,13 @@
                 <a href="#">Забыли пароль?</a>
                 <a href="#">Новая регистрация</a>
             </p>
+        </section>
+        <section class="modal modal-search">
+            <h3 class="visually-hidden">Поиск</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="GET">
+                <label for="search">Поиск по сайту</label>
+                <input type="search" class="search" id="search" placeholder="Что ищем?">
+            </form>
         </section>
     </body>
 </html>
