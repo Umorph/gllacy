@@ -204,7 +204,7 @@
             </div>
         </footer>
         <section class="modal modal-login">
-            <h3 class="visually-hidden">Форма входа</h2>
+            <h2 class="visually-hidden">Форма входа</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
                 <label for="login-email" class="visually-hidden">Электронная почта</label>
                 <input type="email" name="email" class="login-email" id="login-email" placeholder="Электронная почта" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
@@ -218,10 +218,23 @@
             </p>
         </section>
         <section class="modal modal-search">
-            <h3 class="visually-hidden">Поиск</h2>
+            <h2 class="visually-hidden">Поиск</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru" method="GET">
-                <label for="search">Поиск по сайту</label>
+                <label class="visually-hidden" for="search">Поиск по сайту</label>
                 <input type="search" class="search" id="search" placeholder="Что ищем?">
+            </form>
+        </section>
+        <section class="modal modal-feedback">
+            <h2 class="visually-hidden">Обратная связь</h2>
+            <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
+                <label for="feedback-name" class="visually-hidden">Ваше имя</label>
+                <input type="text" name="name" class="feedback-name" id="feedback-name" placeholder="Как вас зовут?" required>
+                <label for="feedback-email" class="visually-hidden">Ваша почта</label>
+                <input type="email" name="email" class="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+                <label for="feedback-text" class="visually-hidden">Напишите что-нибудь</label>
+                <!--Рассчитать колонки и строки при стилизации-->
+                <textarea class="feedback-text" id="feedback-text" placeholder="Напишите что-нибудь..." required></textarea>
+                <button type="submit" class="main-button">Отправить</button>
             </form>
         </section>
     </body>
