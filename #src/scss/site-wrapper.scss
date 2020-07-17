@@ -1,0 +1,54 @@
+.site-wrapper {
+    min-width: 1240px;
+    background-color: $green;
+    background-image: url("../img/slider-item1.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    transition: background-image 0.5s ease, background-color 0.5s ease;
+
+    // Для демонстрации
+    min-height: 100vh;
+
+    &::before,
+    &::after {
+        content: "";
+
+        visibility: hidden;
+    }
+
+    &::before {
+        background-image: url("../img/slider-item2.png");
+    }
+
+    &::after {
+        background-image: url("../img/slider-item3.png");
+    }
+}
+
+#product-1:checked ~ .site-wrapper {
+    background-color: $green;
+    background-image: url("../img/slider-item1.png");
+}
+
+#product-2:checked ~ .site-wrapper {
+    background-color: #8996a6;
+    background-image: url("../img/slider-item2.png");
+}
+
+#product-3:checked ~ .site-wrapper {
+    background-color: #9d8b84;
+    background-image: url("../img/slider-item3.png");
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3 {
+    display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"] {
+    background-color: #ffffff;
+}
