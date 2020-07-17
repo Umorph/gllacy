@@ -1,0 +1,22 @@
+.slide {
+    display: none;
+}
+
+.slide__title {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+
+    font-family: Roboto, sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+.slide__button {
+    padding: 12px 44px;
+
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 41px;
+}
